@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #3b0b0b;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    img.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease; /* Smooth movement */
+}
+
+img.profile-img:hover {
+  transform: scale(1.1) rotate(5deg); /* Slight zoom and rotate on hover */
+}
+    section {
+      margin-bottom: 40px;
+    }
+
+    ul.skills {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .social-links a {
+      margin-right: 10px;
+      text-decoration: none;
+    }
+    #contact {
+  background: linear-gradient(to right, #804141, #3b81a4);
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #3b0b0b;
+  box-shadow: 0 0 5px rgba(59,11,11,0.3);
+}
+
+.submit-btn {
+  background: #3b0b0b;
+  color: #fff;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #5c1a1a;
+}
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .star-rating {
+  direction: rtl;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold;
+}
+
+    form fieldset {
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .submit-btn {
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    footer {
+      background: #3b0b0b;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="top">
+    <h1>Mark Joseph C Cayanong</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- About Me Section -->
+    <section id="home">
+        <center>
+      <h2>About Me</h2>
+      <img src="Mark.jpg" alt="Profile Picture" class="profile-img" />
+      </center>
+      <p>Hello! I'm Mark Joseph C Cayanong, a passionate web developer with a love for clean design and intuitive user experiences.</p>
+      <p>I enjoy creating responsive, accessible, and user-friendly web applications. My journey into web development started in PHINMA Saint Jude Manila College and has grown into a career I truly enjoy.</p>
+
+      <h3>Skills</h3>
+      <ul class="skills">
+        <li>HTML5 & CSS</li>
+        <li> C++</li>
+        <li>Responsive Design/ UI</li>
+        <li>Accessibility</li>
+  <div style="">
+    <p>
+      📘 Facebook: 
+      <a href="https://www.facebook.com/share/15v5YRCuMV/" target="_blank" style="color: #000000; text-decoration: underline;">
+        facebook.com/markcayanong27
+      </a>
+    </p>
+    <p>
+    <p>
+      📧 Gmail: markcayanong0906@gmail.com
+      </p>
+    </p>
+      </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name" maxlength="50" />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com" />
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required placeholder="Your subject" />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Write your message..."></textarea>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Feedback Section -->
+   <!-- Feedback Section -->
+<section id="feedback">
+<Center><h2>Feedback</h2></Center>
+  <form>
+    <fieldset>
+      <legend>Rate and Respond</legend>
+
+      <label for="rating">Rate This Page:</label>
+      <div class="star-rating">
+        <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
+        <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+        <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+        <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+        <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+      </div>
+
+      <label for="type">Feedback Type:</label>
+      <select id="type" name="type" required>
+        <option value="">Select one</option>
+        <option value="bug">Bug Report</option>
+        <option value="suggestion">Suggestion</option>
+        <option value="praise">Praise</option>
+      </select>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" maxlength="500" placeholder="Your feedback..."></textarea>
+
+      <label>
+        <input type="checkbox" name="terms" required> I agree to the terms and conditions.
+      </label>
+
+      <button type="submit" class="submit-btn">Submit Feedback</button>
+    </fieldset>
+  </form>
+</section>
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mark Joseph C Cayanong. All rights reserved. <a href="#top">Back to Top</a></p>
+  </footer>
+
+</body>
+</html>
